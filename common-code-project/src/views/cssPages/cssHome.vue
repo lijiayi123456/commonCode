@@ -4,8 +4,10 @@
         <Header></Header>
         </header>
         <main>
+            
         <ul class="side-nav">
-            <li @click="gotoTencent">Tencent网址</li>
+            <li @click="gotoRouter('./verticalAlign')">text-align</li>
+            <li @click="gotoRouter('./cssSlider')">轮播图</li>
         </ul>
         </main>
         <footer>
@@ -19,18 +21,19 @@ import { defineComponent } from 'vue';
 import {useRouter} from 'vue-router';
 import Header from '@/components/Header.vue';
 
+
 export default defineComponent({
   name: 'Home',
   components: {
-    Header
+    Header,
   },
   setup() {
       const router = useRouter();
-      let gotoTencent = ()=>{
-          router.push('./tencent')
+      let gotoRouter = (path:string)=>{
+          router.push(path);
       }
       return {
-          gotoTencent
+          gotoRouter
       }
 
   }

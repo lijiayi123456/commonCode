@@ -1,11 +1,11 @@
 <template>
     <div class="header-wrap">
         <ul>
-            <li @click="gotoHome">首页</li>
-            <li>JS算法</li>
-            <li>CSS常用样式</li>
-            <li>Vue常用技巧</li>
-            <li @click="toWebTemplate">网站模版</li>
+            <li @click="goToRouter('./')">首页</li>
+            <li @click="goToRouter('./jsHome')">JS算法</li>
+            <li @click="goToRouter('./cssHome')">CSS常用样式</li>
+            <li @click="goToRouter('./vueHome')">Vue常用demo</li>
+            <li @click="goToRouter('./web')">网站模版</li>
             <li class="user">
                 用户
                 <i class="iconfont icon-icon-test28"></i>
@@ -23,15 +23,14 @@ import { useRouter } from 'vue-router';
 export default defineComponent({
     setup() {
         const router = useRouter();
-        let toWebTemplate = ()=> {
-            router.push('./web')
+        let goToRouter = (path:string)=> {
+            router.push(path)
         }
-        let gotoHome = () => {
-            router.push('./');
-        }
+        
+        
         return {
-            toWebTemplate,
-            gotoHome
+            goToRouter,
+           
         }
     },
 })
