@@ -125,10 +125,28 @@
             <span class="iconfont icon-icon-test48"></span>
             <span>xxx</span>
         </section>
+        <!-- <iframe src="https://codesandbox.io/s/optimistic-leakey-lkmr9?file=/src/main.js" 
+            style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" 
+            title="morning-water-umvyh" 
+            allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" 
+            sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin">
+        </iframe> -->
+        <!-- <iframe src="https://c.runoob.com/front-end/61/" 
+            style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" 
+            title="morning-water-umvyh" 
+            allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" 
+            sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin">
+        </iframe> -->
+        <iframe src="http://jsrun.net/new" 
+            style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" 
+            title="morning-water-umvyh" 
+            allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" 
+            sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin">
+        </iframe>
+    
     </div>
     
 </template>
-
 
 
 <style lang="scss" scoped>

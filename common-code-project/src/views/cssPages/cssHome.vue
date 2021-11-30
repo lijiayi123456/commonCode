@@ -6,7 +6,7 @@
         <main>
             
         <ul class="side-nav">
-            <li @click="gotoRouter('./verticalAlign')">text-align</li>
+            <li @click="gotoRouter('./verticalAlign')">vertical-align</li>
             <li @click="gotoRouter('./cssSlider')">轮播图</li>
         </ul>
         </main>

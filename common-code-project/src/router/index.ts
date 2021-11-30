@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home.vue'
 
 const routes: Array<RouteRecordRaw> = [
@@ -13,12 +13,12 @@ const routes: Array<RouteRecordRaw> = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "web" */ '../views/webs/Webs.vue')
+    component: () => import(/* webpackChunkName: "web1" */ '../views/webs/Webs.vue')
   },
   {
     path: '/tencent',
     name: 'Tencent',
-    component: () => import(/* webpackChunkName: "web" */ '../views/webs/Tencent.vue')
+    component: () => import(/* webpackChunkName: "web2" */ '../views/webs/Tencent.vue')
   },
   {
     path: '/vueHome',
@@ -29,6 +29,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/carouselDemo',
     name: 'carouselDemo',
     component: () => import(/* webpackChunkName: "vue" */ '../views/vueDemo/carouselDemo.vue')
+  },
+  {
+    path: '/injectProvide',
+    name: 'injectProvide',
+    component: () => import(/* webpackChunkName: "vue" */ '../views/vueDemo/InjectProvideDemo.vue')
   },
   {
     path: '/cssHome',
@@ -48,18 +53,18 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/jsHome',
     name: 'jsHome',
-    component: () => import(/* webpackChunkName: "css" */ '../views/JSPages/JsHome.vue')
+    component: () => import(/* webpackChunkName: "JS" */ '../views/JSPages/JsHome.vue')
   },
   {
     path: '/JsComAlgorithm',
     name: 'JsComAlgorithm',
-    component: () => import(/* webpackChunkName: "css" */ '../views/JSPages/JsComAlgorithm.vue')
+    component: () => import(/* webpackChunkName: "JS" */ '../views/JSPages/JsComAlgorithm.vue')
   },
 
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHashHistory(process.env.BASE_URL),
   routes
 })
 

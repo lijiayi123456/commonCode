@@ -1,12 +1,13 @@
 <template>
     <div class="webs-wrap">
         <header>
-        <Header></Header>
+            <Header></Header>
         </header>
         <main>
             
         <ul class="side-nav">
-            <li @click="gotoTencent">轮播图</li>
+            <li @click="gotoRouter('./carouselDemo')">轮播图</li>
+            <li @click="gotoRouter('./injectProvide')">InjectProvide</li>
         </ul>
         </main>
         <footer>
@@ -28,11 +29,11 @@ export default defineComponent({
   },
   setup() {
       const router = useRouter();
-      let gotoTencent = ()=>{
-          router.push('./carouselDemo')
+      let gotoRouter = (path:string)=>{
+          router.push(path);
       }
       return {
-          gotoTencent
+          gotoRouter
       }
 
   }
