@@ -8,6 +8,7 @@
         <ul class="side-nav">
             <li @click="gotoRouter('./carouselDemo')">轮播图</li>
             <li @click="gotoRouter('./injectProvide')">InjectProvide</li>
+            <li @click="gotoRouter('./treeDemo')">递归树</li>
         </ul>
         </main>
         <footer>
