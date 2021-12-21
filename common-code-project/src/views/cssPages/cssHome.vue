@@ -8,6 +8,7 @@
         <ul class="side-nav">
             <li @click="gotoRouter('./verticalAlign')">vertical-align</li>
             <li @click="gotoRouter('./cssSlider')">轮播图</li>
+            <li @click="gotoRouter('./boxModel')">盒模型</li>
         </ul>
         </main>
         <footer>

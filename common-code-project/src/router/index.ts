@@ -56,6 +56,11 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import(/* webpackChunkName: "css" */ '../views/cssPages/cssSlider.vue')
   },
   {
+    path: '/boxModel',
+    name: 'boxModel',
+    component: () => import(/* webpackChunkName: "css" */ '../views/cssPages/BoxModel.vue')
+  },
+  {
     path: '/jsHome',
     name: 'jsHome',
     component: () => import(/* webpackChunkName: "JS" */ '../views/JSPages/JsHome.vue')

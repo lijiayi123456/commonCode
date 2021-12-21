@@ -1,0 +1,26 @@
+#app {
+  font-size: 24px;
+  color: blue;
+}
+div[data-v-b9cf2738] {
+  color: #ddd;
+  font-size: 24px;
+}
+
+h1 a[data-v-b61e7b4a] {
+  color: #3399ff;
+  font-size: 24px;
+}
+
+button[data-v-7ada44bf] {
+  border: 0;
+  outline: none;
+  color: #fff;
+  padding: 4px 8px;
+}
+button[data-v-7ada44bf]:active {
+  background: blue;
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
